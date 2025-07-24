@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio Ilham Aziz</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
   <!-- Header -->
-  <header class="bg-white shadow-md">
-    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Ilham Aziz Saputra, S.T.</h1>
-      <nav>
-        <a href="#about" class="mx-2 hover:text-blue-600">Tentang</a>
-        <a href="#portfolio" class="mx-2 hover:text-blue-600">Portofolio</a>
-        <a href="#contact" class="mx-2 hover:text-blue-600">Kontak</a>
+  <header class="bg-white shadow-md sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+      <h1 class="text-lg sm:text-xl font-bold mb-2 sm:mb-0">Ilham Aziz Saputra, S.T.</h1>
+      <nav class="flex space-x-4 text-sm sm:text-base">
+        <a href="#about" class="hover:text-blue-600">Tentang</a>
+        <a href="#portfolio" class="hover:text-blue-600">Portofolio</a>
+        <a href="#contact" class="hover:text-blue-600">Kontak</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="text-center py-12 bg-white">
-    <img src="Ilham.png" alt="Foto Ilham Aziz" class="mx-auto rounded-full shadow-md mb-4 w-32 h-32 object-cover">
-    <h2 class="text-2xl font-semibold">Electrical Engineer & IoT Developer</h2>
-    <p class="mt-2 text-gray-600">Saya adalah lulusan teknik elektro dengan minat dalam robotika, IoT, dan sistem otomatisasi.</p>
-    <a href="cv-ilham.pdf" class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" download>Download CV</a>
+  <section class="text-center py-10 px-4 bg-white">
+    <img src="Ilham.png" alt="Foto Ilham Aziz" class="mx-auto rounded-full shadow-md mb-4 w-28 h-28 sm:w-32 sm:h-32 object-cover">
+    <h2 class="text-xl sm:text-2xl font-semibold">Electrical Engineer & IoT Developer</h2>
+    <p class="mt-2 text-gray-600 text-sm sm:text-base">Saya adalah lulusan teknik elektro dengan minat dalam robotika, IoT, dan sistem otomatisasi.</p>
+    <a href="cv-ilham.pdf" class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm sm:text-base" download>Download CV</a>
   </section>
 
   <!-- Tentang -->
-  <section id="about" class="max-w-4xl mx-auto py-12 px-4">
-    <h3 class="text-xl font-bold mb-4">Tentang Saya</h3>
-    <p>Saya memiliki pengalaman dalam pengembangan sistem berbasis IoT, otomasi industri, dan mengikuti kompetisi seperti KRI & WYIE. Saya suka menggabungkan teknologi dan kreativitas untuk menciptakan solusi yang efisien.</p>
+  <section id="about" class="max-w-3xl mx-auto py-10 px-4">
+    <h3 class="text-lg sm:text-xl font-bold mb-4 text-center sm:text-left">Tentang Saya</h3>
+    <p class="text-sm sm:text-base leading-relaxed">Saya memiliki pengalaman dalam pengembangan sistem berbasis IoT, otomasi industri, dan mengikuti kompetisi seperti KRI & WYIE. Saya suka menggabungkan teknologi dan kreativitas untuk menciptakan solusi yang efisien.</p>
   </section>
 
   <!-- Portofolio -->
-  <section id="portfolio" class="bg-gray-100 py-12">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-xl font-bold mb-6">Portofolio</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <section id="portfolio" class="bg-gray-100 py-10 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-lg sm:text-xl font-bold mb-6 text-center sm:text-left">Portofolio</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
-        <div class="bg-white shadow-md rounded p-4">
-          <h4 class="text-lg font-semibold mb-2">Robot Pemilah Sampah Otomatis</h4>
+        <div class="bg-white shadow-md rounded p-4 hover:shadow-lg transition">
+          <h4 class="text-base font-semibold mb-2">Robot Pemilah Sampah Otomatis</h4>
           <p class="text-sm text-gray-600">Menggunakan motor DC encoder, kamera, dan kendali PID untuk memilah 5 jenis sampah.</p>
         </div>
         <!-- Card 2 -->
-        <div class="bg-white shadow-md rounded p-4">
-          <h4 class="text-lg font-semibold mb-2">Smart Chicken Cage IoT</h4>
+        <div class="bg-white shadow-md rounded p-4 hover:shadow-lg transition">
+          <h4 class="text-base font-semibold mb-2">Smart Chicken Cage IoT</h4>
           <p class="text-sm text-gray-600">Kandang ayam otomatis dengan pengendalian suhu & gas berbasis IoT dan ESP32.</p>
         </div>
         <!-- Tambah lebih banyak proyek -->
@@ -54,14 +54,16 @@
   </section>
 
   <!-- Kontak -->
-  <section id="contact" class="max-w-4xl mx-auto py-12 px-4">
-    <h3 class="text-xl font-bold mb-4">Kontak</h3>
-    <p>Email: <a href="mailto:ilhamaziz@email.com" class="text-blue-600 hover:underline">ilhamaziz@email.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/ilhamaziz" class="text-blue-600 hover:underline" target="_blank">linkedin.com/in/ilhamaziz</a></p>
-    <p>GitHub: <a href="https://github.com/ilhamaziz" class="text-blue-600 hover:underline" target="_blank">github.com/ilhamaziz</a></p>
+  <section id="contact" class="max-w-3xl mx-auto py-10 px-4">
+    <h3 class="text-lg sm:text-xl font-bold mb-4 text-center sm:text-left">Kontak</h3>
+    <div class="space-y-2 text-sm sm:text-base">
+      <p>Email: <a href="mailto:ilhamaziz@email.com" class="text-blue-600 hover:underline">ilhamaziz@email.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/ilhamaziz" class="text-blue-600 hover:underline" target="_blank">linkedin.com/in/ilhamaziz</a></p>
+      <p>GitHub: <a href="https://github.com/ilhamaziz" class="text-blue-600 hover:underline" target="_blank">github.com/ilhamaziz</a></p>
+    </div>
   </section>
 
-  <footer class="text-center py-4 text-sm text-gray-500 border-t">
+  <footer class="text-center py-4 text-xs sm:text-sm text-gray-500 border-t">
     © 2025 Ilham Aziz. All rights reserved.
   </footer>
 </body>

@@ -3,72 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portofolio Ilham Aziz – Electrical Engineer & IoT Developer" />
-  <title>Ilham Aziz | Portofolio</title>
-  <link rel="icon" href="favicon.ico" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html {
-      scroll-behavior: smooth;
+  <title>Portofolio Ilham Aziz</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function showDetail(judul) {
+      alert('Halaman detail proyek: ' + judul + ' masih dalam pengembangan.');
     }
-  </style>
+  </script>
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <header class="bg-white shadow p-4 sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl sm:text-2xl font-bold text-blue-600">Ilham Aziz</h1>
-      <nav class="flex space-x-4 text-sm sm:text-base">
-        <a href="#about" class="hover:text-blue-600 hover:underline">Tentang</a>
-        <a href="#portfolio" class="hover:text-blue-600 hover:underline">Portofolio</a>
-        <a href="#contact" class="hover:text-blue-600 hover:underline">Kontak</a>
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold">Ilham Aziz</h1>
+      <nav class="space-x-4">
+        <a href="#beranda" class="text-gray-600 hover:text-blue-600">Beranda</a>
+        <a href="#portofolio" class="text-gray-600 hover:text-blue-600">Portofolio</a>
+        <a href="#pengalaman" class="text-gray-600 hover:text-blue-600">Pengalaman</a>
+        <a href="#layanan" class="text-gray-600 hover:text-blue-600">Layanan</a>
+        <a href="#kontak" class="text-gray-600 hover:text-blue-600">Kontak</a>
+        <a href="CV%20ILHAM.pdf" download class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Unduh CV</a>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-4 py-10 space-y-16">
-    <section id="about" class="text-center sm:text-left">
-      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-        <img src="Ilham.png" alt="Foto Ilham" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow" />
-        <div>
-          <h2 class="text-2xl sm:text-3xl font-semibold mb-2">Halo, saya Ilham Aziz</h2>
-          <p class="text-gray-700 leading-relaxed max-w-xl">
-            Saya seorang Electrical Engineer dengan minat dalam teknologi Internet of Things (IoT), embedded system, dan pengembangan solusi teknis yang inovatif.
-          </p>
-          <a href="CV%20ILHAM.pdf" download class="inline-flex items-center justify-center gap-2 mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm sm:text-base shadow">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M12 12v6m0 0l-3-3m3 3l3-3m-6-6h6" />
-            </svg>
-            Download CV
-          </a>
+  <section id="beranda" class="py-12 bg-gradient-to-r from-blue-50 to-blue-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <img src="Ilham.png" alt="Foto Profil" class="w-32 h-32 mx-auto rounded-full mb-4 shadow-md" />
+      <h2 class="text-2xl font-semibold mb-2">Ilham Aziz</h2>
+      <p class="text-gray-700 max-w-2xl mx-auto">
+        Mahasiswa Teknik Elektro yang bersemangat dan berdedikasi dengan pengalaman dalam sistem kelistrikan, elektronika, dan teknologi terkini. Terampil dalam analisis rangkaian, sistem kontrol, dan energi terbarukan. Aktif di berbagai organisasi dan lomba robotika.
+      </p>
+    </div>
+  </section>
+
+  <section id="portofolio" class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800">Portofolio</h2>
+        <p class="text-gray-600 mt-2">Kumpulan proyek yang telah diselesaikan di bidang teknik dan teknologi.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Portofolio 1 -->
+        <a href="robot-sampah.html" class="bg-white rounded shadow hover:shadow-lg cursor-pointer transition-transform transform hover:-translate-y-1 block">
+          <img src="images/sampah.jpg" alt="Robot Pemilah Sampah" class="w-full h-56 object-cover rounded-t">
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-1">Robot Pemilah Sampah</h4>
+            <p class="text-sm text-gray-600">Robot dengan kamera dan motor encoder untuk memisahkan sampah secara otomatis.</p>
+          </div>
+        </a>
+        <!-- Portofolio 2 -->
+        <a href="medlink-v1.html" class="bg-white rounded shadow hover:shadow-lg cursor-pointer transition-transform transform hover:-translate-y-1 block">
+          <img src="images/medlinkv1.jpg" alt="Medlink Smart V1" class="w-full h-56 object-cover rounded-t">
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-1">Medlink Smart V1</h4>
+            <p class="text-sm text-gray-600">Prototipe sistem monitoring kesehatan berbasis IoT menggunakan ESP32 dan sensor medis.</p>
+          </div>
+        </a>
+        <!-- Portofolio 3 -->
+        <a href="medlink-v2.html" class="bg-white rounded shadow hover:shadow-lg cursor-pointer transition-transform transform hover:-translate-y-1 block">
+          <img src="images/medlinkv2.jpg" alt="Medlink Smart V2" class="w-full h-56 object-cover rounded-t">
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-1">Medlink Smart V2</h4>
+            <p class="text-sm text-gray-600">Versi lanjutan dengan integrasi cloud dan aplikasi mobile berbasis Flutter dan Firebase.</p>
+          </div>
+        </a>
+        <!-- Portofolio 4 -->
+        <a href="proyek-lain.html" class="bg-white rounded shadow hover:shadow-lg cursor-pointer transition-transform transform hover:-translate-y-1 block">
+          <img src="images/project-lain.jpg" alt="Proyek Lain" class="w-full h-56 object-cover rounded-t">
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-1">Proyek Lain-lain</h4>
+            <p class="text-sm text-gray-600">Berbagai proyek tambahan di bidang mikrokontroler, elektronika, dan desain mekanik.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="pengalaman" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800">Pengalaman</h2>
+        <p class="text-gray-600 mt-2">Beberapa pengalaman profesional dan organisasi di bidang teknik elektro dan robotika.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Pengalaman 1 -->
+        <a href="robot-research.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="images/robot-research.jpg" alt="Robot Research" class="w-full h-56 object-cover">
+          <div class="p-5">
+            <h4 class="text-xl font-semibold text-gray-800 mb-1">Robot Research</h4>
+            <p class="text-gray-600 text-sm">Aktif dalam riset dan pengembangan robot serta edukasi dasar pemrograman dan elektronik untuk pemula.</p>
+          </div>
+        </a>
+        <!-- Pengalaman 2 -->
+        <a href="kontes-robot.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="images/kontes.jpg" alt="Kontes Robot Indonesia" class="w-full h-56 object-cover">
+          <div class="p-5">
+            <h4 class="text-xl font-semibold text-gray-800 mb-1">Kontes Robot Indonesia</h4>
+            <p class="text-gray-600 text-sm">Desain dan konstruksi robot untuk lomba nasional. Fokus pada sistem kontrol dan pemrograman.</p>
+          </div>
+        </a>
+        <!-- Pengalaman 3 -->
+        <a href="rr-mengajar.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="images/mengajar.jpg" alt="RR Mengajar" class="w-full h-56 object-cover">
+          <div class="p-5">
+            <h4 class="text-xl font-semibold text-gray-800 mb-1">RR Mengajar</h4>
+            <p class="text-gray-600 text-sm">Mengajar robotika untuk siswa SD hingga SMA. Membuat materi dan membina siswa serta guru.</p>
+          </div>
+        </a>
+        <!-- Pengalaman 4 -->
+        <a href="praktek-kerja.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="images/kerja.jpg" alt="Praktek Kerja" class="w-full h-56 object-cover">
+          <div class="p-5">
+            <h4 class="text-xl font-semibold text-gray-800 mb-1">Praktek Kerja</h4>
+            <p class="text-gray-600 text-sm">Kerja praktik bidang kelistrikan dan kontrol sistem. Aktif dalam proyek instalasi dan perawatan sistem.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan" class="py-12 bg-blue-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold text-center mb-8">Layanan Jasa</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded shadow hover:shadow-lg p-6 text-center">
+          <img src="pcb-icon.png" alt="Desain PCB" class="w-16 h-16 mx-auto mb-4">
+          <h4 class="font-semibold text-lg mb-2">Desain PCB</h4>
+          <p class="text-sm text-gray-600 mb-4">Pembuatan desain PCB untuk berbagai kebutuhan proyek elektronik dengan presisi tinggi.</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Pesan Sekarang</button>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg p-6 text-center">
+          <img src="3d-icon.png" alt="Desain 3D" class="w-16 h-16 mx-auto mb-4">
+          <h4 class="font-semibold text-lg mb-2">Desain 3D</h4>
+          <p class="text-sm text-gray-600 mb-4">Layanan desain 3D untuk casing elektronik, prototype, dan kebutuhan presentasi produk.</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Pesan Sekarang</button>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg p-6 text-center">
+          <img src="autocad-icon.png" alt="Desain AutoCAD" class="w-16 h-16 mx-auto mb-4">
+          <h4 class="font-semibold text-lg mb-2">Desain AutoCAD</h4>
+          <p class="text-sm text-gray-600 mb-4">Pembuatan gambar teknik dan rancangan instalasi listrik atau mekanik.</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Pesan Sekarang</button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="portfolio">
-      <h3 class="text-xl sm:text-2xl font-bold mb-4 text-center sm:text-left text-blue-600">Portofolio</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-        <div class="bg-white shadow-md rounded p-4 hover:shadow-xl hover:scale-[1.02] transition duration-300">
-          <h4 class="text-lg font-semibold mb-2">Proyek 1</h4>
-          <p class="text-sm text-gray-600">Deskripsi singkat proyek pertama saya yang mencerminkan keahlian dan pengalaman saya.</p>
-        </div>
-        <div class="bg-white shadow-md rounded p-4 hover:shadow-xl hover:scale-[1.02] transition duration-300">
-          <h4 class="text-lg font-semibold mb-2">Proyek 2</h4>
-          <p class="text-sm text-gray-600">Deskripsi singkat proyek kedua saya yang mencerminkan inovasi dan solusi teknis.</p>
-        </div>
-        <!-- Tambahkan lebih banyak proyek jika ada -->
-      </div>
-    </section>
+  <section id="kontak" class="py-12">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-6">Kontak</h3>
+      <p class="mb-2">📞 <a href="https://wa.me/628123456789" class="text-blue-600 hover:underline">WhatsApp: +62 812-3456-789</a></p>
+      <p class="mb-2">📧 Email: <a href="mailto:ilham@example.com" class="text-blue-600 hover:underline">ilham@example.com</a></p>
+      <p class="mb-2">🔗 LinkedIn: <a href="https://linkedin.com/in/ilhamaziz" class="text-blue-600 hover:underline">ilhamaziz</a></p>
+      <p class="mb-2">📸 Instagram: <a href="https://instagram.com/ilhamaziz" class="text-blue-600 hover:underline">@ilhamaziz</a></p>
+      <p class="mb-2">🗶 Twitter: <a href="https://twitter.com/ilhamaziz" class="text-blue-600 hover:underline">@ilhamaziz</a></p>
+      <p class="mb-2">🎵 TikTok: <a href="https://tiktok.com/@ilhamaziz" class="text-blue-600 hover:underline">@ilhamaziz</a></p>
+      <p class="mb-2">💻 GitHub: <a href="https://github.com/ilhamaziz" class="text-blue-600 hover:underline">github.com/ilhamaziz</a></p>
+    </div>
+  </section>
 
-    <section id="contact" class="text-center sm:text-left">
-      <h3 class="text-xl sm:text-2xl font-bold mb-4 text-blue-600">Kontak</h3>
-      <p class="text-gray-700">Email: <a href="mailto:ilhamazizsaputra@email.com" class="text-blue-600 hover:underline">ilhamazizsaputra@email.com</a></p>
-      <p class="text-gray-700">LinkedIn: <a href="https://www.linkedin.com/in/ilham-aziz-saputra-84b064298/" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/ilhamazizsaputra</a></p>
-      <p class="text-gray-700">GitHub: <a href="https://github.com/ilhamaziz24" target="_blank" class="text-blue-600 hover:underline">github.com/ilhamaziz24</a></p>
-    </section>
-  </main>
-
-  <footer class="bg-white text-center py-6 text-sm text-gray-500">
-    &copy; 2025 Ilham Aziz. All rights reserved.
+  <footer class="bg-white border-t mt-12 py-6">
+    <div class="max-w-6xl mx-auto text-center text-sm text-gray-600">
+      &copy; 2025 Ilham Aziz. Seluruh hak cipta dilindungi.
+    </div>
   </footer>
 </body>
 </html>

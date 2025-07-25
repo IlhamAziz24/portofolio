@@ -6,9 +6,8 @@
   <title>Portofolio Ilham Aziz</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById("mobile-menu");
-      menu.classList.toggle("hidden");
+    function showDetail(judul) {
+      alert('Halaman detail proyek: ' + judul + ' masih dalam pengembangan.');
     }
   </script>
 </head>
@@ -44,38 +43,22 @@
         <p class="text-gray-600 mt-2">Kumpulan proyek yang telah diselesaikan di bidang teknik dan teknologi.</p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center items-center py-8">
         <!-- Portofolio 1 -->
         <a href="robot-sampah.html" class="bg-white rounded shadow hover:shadow-lg cursor-pointer transition-transform transform hover:-translate-y-1 block">
-          <img src="images/sampah.jpg" alt="Robot Pemilah Sampah" class="w-full h-56 object-cover rounded-t">
-          <div class="p-4">
-            <h4 class="font-semibold text-lg mb-1">Robot Pemilah Sampah</h4>
-            <p class="text-sm text-gray-600">Robot dengan kamera dan motor encoder untuk memisahkan sampah secara otomatis.</p>
-          </div>
+          <img src="images-sampah.png" alt="Robot Pemilah Sampah" class="w-full max-h-64 object-contain bg-white rounded-t">
         </a>
         <!-- Portofolio 2 -->
         <a href="medlink-v1.html" class="bg-white rounded shadow hover:shadow-lg cursor-pointer transition-transform transform hover:-translate-y-1 block">
-          <img src="images/medlinkv1.jpg" alt="Medlink Smart V1" class="w-full h-56 object-cover rounded-t">
-          <div class="p-4">
-            <h4 class="font-semibold text-lg mb-1">Medlink Smart V1</h4>
-            <p class="text-sm text-gray-600">Prototipe sistem monitoring kesehatan berbasis IoT menggunakan ESP32 dan sensor medis.</p>
-          </div>
+          <img src="images-medlinkv1.png" alt="Medlink Smart V1" class="w-full max-h-64 object-contain bg-white rounded-t">
         </a>
         <!-- Portofolio 3 -->
         <a href="medlink-v2.html" class="bg-white rounded shadow hover:shadow-lg cursor-pointer transition-transform transform hover:-translate-y-1 block">
-          <img src="images/medlinkv2.jpg" alt="Medlink Smart V2" class="w-full h-56 object-cover rounded-t">
-          <div class="p-4">
-            <h4 class="font-semibold text-lg mb-1">Medlink Smart V2</h4>
-            <p class="text-sm text-gray-600">Versi lanjutan dengan integrasi cloud dan aplikasi mobile berbasis Flutter dan Firebase.</p>
-          </div>
+          <img src="images-medlinkv2.png" alt="Medlink Smart V2" class="w-full max-h-64 object-contain bg-white rounded-t">
         </a>
         <!-- Portofolio 4 -->
         <a href="proyek-lain.html" class="bg-white rounded shadow hover:shadow-lg cursor-pointer transition-transform transform hover:-translate-y-1 block">
-          <img src="images/project-lain.jpg" alt="Proyek Lain" class="w-full h-56 object-cover rounded-t">
-          <div class="p-4">
-            <h4 class="font-semibold text-lg mb-1">Proyek Lain-lain</h4>
-            <p class="text-sm text-gray-600">Berbagai proyek tambahan di bidang mikrokontroler, elektronika, dan desain mekanik.</p>
-          </div>
+          <img src="images-project-lain.png" alt="Proyek Lain" class="w-full max-h-64 object-contain bg-white rounded-t">
         </a>
       </div>
     </div>
@@ -87,39 +70,23 @@
         <h2 class="text-3xl font-bold text-gray-800">Pengalaman</h2>
         <p class="text-gray-600 mt-2">Beberapa pengalaman profesional dan organisasi di bidang teknik elektro dan robotika.</p>
       </div>
-
-      <div class="grid md:grid-cols-2 gap-8">
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center items-center py-8">
         <!-- Pengalaman 1 -->
         <a href="robot-research.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-          <img src="images/robot-research.jpg" alt="Robot Research" class="w-full h-56 object-cover">
-          <div class="p-5">
-            <h4 class="text-xl font-semibold text-gray-800 mb-1">Robot Research</h4>
-            <p class="text-gray-600 text-sm">Aktif dalam riset dan pengembangan robot serta edukasi dasar pemrograman dan elektronik untuk pemula.</p>
-          </div>
+          <img src="images-robotresearch.png" alt="Robot Research" class="w-full max-h-64 object-contain bg-white rounded-t">
         </a>
         <!-- Pengalaman 2 -->
         <a href="kontes-robot.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-          <img src="images/kontes.jpg" alt="Kontes Robot Indonesia" class="w-full h-56 object-cover">
-          <div class="p-5">
-            <h4 class="text-xl font-semibold text-gray-800 mb-1">Kontes Robot Indonesia</h4>
-            <p class="text-gray-600 text-sm">Desain dan konstruksi robot untuk lomba nasional. Fokus pada sistem kontrol dan pemrograman.</p>
-          </div>
+          <img src="images-kontes-robot.png" alt="Kontes Robot Indonesia" class="w-full max-h-64 object-contain bg-white rounded-t">
         </a>
         <!-- Pengalaman 3 -->
         <a href="rr-mengajar.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-          <img src="images/mengajar.jpg" alt="RR Mengajar" class="w-full h-56 object-cover">
-          <div class="p-5">
-            <h4 class="text-xl font-semibold text-gray-800 mb-1">RR Mengajar</h4>
-            <p class="text-gray-600 text-sm">Mengajar robotika untuk siswa SD hingga SMA. Membuat materi dan membina siswa serta guru.</p>
-          </div>
+          <img src="images-rr-mengajar.png" alt="RR Mengajar" class="w-full max-h-64 object-contain bg-white rounded-t">
         </a>
         <!-- Pengalaman 4 -->
         <a href="praktek-kerja.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-          <img src="images/kerja.jpg" alt="Praktek Kerja" class="w-full h-56 object-cover">
-          <div class="p-5">
-            <h4 class="text-xl font-semibold text-gray-800 mb-1">Praktek Kerja</h4>
-            <p class="text-gray-600 text-sm">Kerja praktik bidang kelistrikan dan kontrol sistem. Aktif dalam proyek instalasi dan perawatan sistem.</p>
-          </div>
+          <img src="images-praktek-kerja.png" alt="Praktek Kerja" class="w-full max-h-64 object-contain bg-white rounded-t">
         </a>
       </div>
     </div>
@@ -130,19 +97,19 @@
       <h3 class="text-2xl font-bold text-center mb-8">Layanan Jasa</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="bg-white rounded shadow hover:shadow-lg p-6 text-center">
-          <img src="pcb-icon.png" alt="Desain PCB" class="w-16 h-16 mx-auto mb-4">
+          <img src="images-desain-pcb.png" alt="Desain PCB" class="w-full max-h-64 object-contain bg-white rounded-t">
           <h4 class="font-semibold text-lg mb-2">Desain PCB</h4>
           <p class="text-sm text-gray-600 mb-4">Pembuatan desain PCB untuk berbagai kebutuhan proyek elektronik dengan presisi tinggi.</p>
           <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Pesan Sekarang</button>
         </div>
         <div class="bg-white rounded shadow hover:shadow-lg p-6 text-center">
-          <img src="3d-icon.png" alt="Desain 3D" class="w-16 h-16 mx-auto mb-4">
+          <img src="images-desain-3d.png" alt="Desain 3D" class="w-full max-h-64 object-contain bg-white rounded-t">
           <h4 class="font-semibold text-lg mb-2">Desain 3D</h4>
           <p class="text-sm text-gray-600 mb-4">Layanan desain 3D untuk casing elektronik, prototype, dan kebutuhan presentasi produk.</p>
           <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Pesan Sekarang</button>
         </div>
         <div class="bg-white rounded shadow hover:shadow-lg p-6 text-center">
-          <img src="autocad-icon.png" alt="Desain AutoCAD" class="w-16 h-16 mx-auto mb-4">
+          <img src="images-desain-autocad.png" alt="Desain AutoCAD" class="w-full max-h-64 object-contain bg-white rounded-t">
           <h4 class="font-semibold text-lg mb-2">Desain AutoCAD</h4>
           <p class="text-sm text-gray-600 mb-4">Pembuatan gambar teknik dan rancangan instalasi listrik atau mekanik.</p>
           <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Pesan Sekarang</button>
